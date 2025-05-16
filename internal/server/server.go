@@ -2,8 +2,12 @@ package server
 
 import (
 	"flag"
+	"github.com/gofiber/contrib/websocket"
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/gofiber/template/html/v2"
 	"moraes-streaming/internal/handlers"
+	"time"
 )
 
 var (
@@ -19,7 +23,12 @@ func Run() error {
 		*addr = ":8080"
 	}
 
-	app := fiber.New(fiber.Config{})
+	engine := html.New("./views", ".html")
+
+	app := fiber.New(fiber.Config{
+		Views: engine,
+	})
+	app.Use(cors.New())
 
 	// handlers
 	chatHandler := handlers.NewChatHandler()
@@ -31,7 +40,9 @@ func Run() error {
 	app.Get("/", welcomeHandler.Welcome)
 	app.Get("/room/create", roomHandler.CreateRoom)
 	app.Get("/room/:id", roomHandler.GetRoom)
-	app.Get("/room/:id/ws")
+	app.Get("/room/:id/ws", websocket.New(roomHandler.RoomWS, websocket.Config{
+		HandshakeTimeout: 10 * time.Second,
+	}))
 	app.Get("/room/:id/chat", roomHandler.ChatRoom)
 	app.Get("/room/:id/chat/ws", roomHandler.ChatRoomWS)
 	app.Get("/room/:id/viewer/ws", roomHandler.RoomViewerWS)

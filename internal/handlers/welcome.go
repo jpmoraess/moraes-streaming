@@ -9,5 +9,5 @@ func NewWelcomeHandler() *WelcomeHandler {
 }
 
 func (handler *WelcomeHandler) Welcome(c *fiber.Ctx) error {
-	return c.SendString("Hello, World!")
+	return c.Render("welcome", nil, "layouts/main")
 }
