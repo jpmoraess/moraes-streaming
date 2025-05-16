@@ -1,0 +1,57 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of the go coverage tool
+*.coverprofile
+
+# Go workspace file (Go 1.18+)
+go.work
+go.work.sum
+
+# Build directories
+/bin/
+/build/
+/dist/
+/out/
+
+# Dependency directories (vendor if using vendoring)
+vendor/
+
+# Go module files (optional, if you don't want to commit these)
+# go.mod
+# go.sum
+
+# IDEs and editors
+.idea/                  # JetBrains GoLand
+*.iml                   # IntelliJ module files
+*.ipr
+*.iws
+
+# VSCode (optional, remove if you use VSCode and want to commit settings)
+.vscode/
+
+# Logs and debug
+*.log
+*.dump
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage files
+coverage.out
+profile.cov
+*.lcov
+
+# Generated files
+*.gen.go
+
+# Test results
+*.testresult
