@@ -36,16 +36,26 @@ func (handler *RoomHandler) GetRoom(c *fiber.Ctx) error {
 	return nil
 }
 
-func (handler *RoomHandler) ChatRoom(c *fiber.Ctx) error {
-	return c.SendString("Chat Room")
+func (handler *RoomHandler) RoomChat(c *fiber.Ctx) error {
+	return c.SendString("Room Chat")
 }
 
-func (handler *RoomHandler) ChatRoomWS(c *fiber.Ctx) error {
-	return c.SendString("Chat Room WS")
+func (handler *RoomHandler) RoomChatWS(c *websocket.Conn) {
+	roomId := c.Params("id")
+	if roomId == "" {
+		return
+	}
+
+	createOrGetRoom(uuid.MustParse(roomId))
 }
 
-func (handler *RoomHandler) RoomViewerWS(c *fiber.Ctx) error {
-	return c.SendString("Room Viewer WS")
+func (handler *RoomHandler) RoomViewerWS(c *websocket.Conn) {
+	roomId := c.Params("id")
+	if roomId == "" {
+		return
+	}
+
+	createOrGetRoom(uuid.MustParse(roomId))
 }
 
 func createOrGetRoom(id uuid.UUID) (string, string, string) {
