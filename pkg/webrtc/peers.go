@@ -1,7 +1,7 @@
 package webrtc
 
 import (
-	"github.com/pion/webrtc"
+	"github.com/pion/webrtc/v3"
 	"sync"
 )
 

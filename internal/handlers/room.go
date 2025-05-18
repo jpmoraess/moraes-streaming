@@ -60,7 +60,7 @@ func (handler *RoomHandler) RoomViewerWS(c *websocket.Conn) {
 }
 
 func createOrGetRoom(id uuid.UUID) (string, string, *w.Room) {
-	return "", "", ""
+	return "", "", &w.Room{}
 }
 
 func roomViewerWS(c *websocket.Conn) {

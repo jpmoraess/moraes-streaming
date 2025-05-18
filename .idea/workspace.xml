@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc7d576-2761-4aa5-87d6-44eda97c6de8" name="Changes" comment="">
+    <list default="true" id="dbc7d576-2761-4aa5-87d6-44eda97c6de8" name="Changes" comment="configure hub and client struct">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/handlers/room.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/handlers/room.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/chat/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/chat/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/chat/hub.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/chat/hub.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/webrtc/peers.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/webrtc/peers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/webrtc/room.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/webrtc/room.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +83,8 @@
     <MESSAGE value="config server routes with fiber" />
     <MESSAGE value="adding some routes and html pages" />
     <MESSAGE value="adding Dockerfile, Makefile and config websocket handlers" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding Dockerfile, Makefile and config websocket handlers" />
+    <MESSAGE value="configure hub and client struct" />
+    <option name="LAST_COMMIT_MESSAGE" value="configure hub and client struct" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
