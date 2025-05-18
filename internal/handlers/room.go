@@ -5,6 +5,7 @@ import (
 	"github.com/gofiber/contrib/websocket"
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
+	w "moraes-streaming/pkg/webrtc"
 )
 
 type RoomHandler struct{}
@@ -58,6 +59,19 @@ func (handler *RoomHandler) RoomViewerWS(c *websocket.Conn) {
 	createOrGetRoom(uuid.MustParse(roomId))
 }
 
-func createOrGetRoom(id uuid.UUID) (string, string, string) {
+func createOrGetRoom(id uuid.UUID) (string, string, *w.Room) {
 	return "", "", ""
+}
+
+func roomViewerWS(c *websocket.Conn) {
+
+}
+
+func roomViewerConn(c *websocket.Conn, p *w.Peers) {
+
+}
+
+type Message struct {
+	Event string `json:"event"`
+	Data  string `json:"data"`
 }

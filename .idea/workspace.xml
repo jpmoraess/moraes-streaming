@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc7d576-2761-4aa5-87d6-44eda97c6de8" name="Changes" comment="adding some routes and html pages">
-      <change afterPath="$PROJECT_DIR$/docker/compose/dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/image/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/image/Dockerfile.turn" afterDir="false" />
+    <list default="true" id="dbc7d576-2761-4aa5-87d6-44eda97c6de8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/handlers/room.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/handlers/room.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/handlers/stream.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/handlers/stream.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/chat/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/chat/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/chat/hub.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/chat/hub.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/webrtc/peers.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/webrtc/peers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/webrtc/room.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/webrtc/room.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,23 +54,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "master",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/Users/jpmoraess",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "go.sdk"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jpmoraess&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;go.sdk&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,7 +86,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="config server routes with fiber" />
     <MESSAGE value="adding some routes and html pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding some routes and html pages" />
+    <MESSAGE value="adding Dockerfile, Makefile and config websocket handlers" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding Dockerfile, Makefile and config websocket handlers" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
